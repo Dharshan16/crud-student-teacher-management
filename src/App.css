@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.nav{
+  background-color: black;
+  color: aliceblue;
+  height: 10vh;
+}
+
+.nav > span{
+  display: flex;
+  height: 100%;
+  align-items:center;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.nav > span>button{
+  padding: 5px;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+.content{
+  min-height: 80vh;
+  position: relative;
+}
+
+.footer{
+  background-color: black;
+  color: aliceblue;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePage{
+  text-align: center;
+  padding-top: 150px;
+}
+
+.add-btn{
+  padding: 5px;
+  margin: 10px 0 10px 10px;
+}
+
+.edit-btn{
+  padding: 5px;
+  margin: 10px;
+  /* border: none; */
+  border-radius: 10px;
+
+}
+.del-btn {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.form > input{
+  margin: 10px 0;
+}
