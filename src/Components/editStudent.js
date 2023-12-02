@@ -5,7 +5,7 @@ import { AppState } from "../Context/AppProvider";
 
 
 export default function EditStudent() {
-    const { student, setStudent } = AppState();
+    const { student} = AppState();
     const history = useHistory();
     const{id}=useParams()
     console.log("id = "+id)
@@ -16,7 +16,7 @@ export default function EditStudent() {
     const [standard, setStandard] = useState("");
 
     const selectedStudent = student.find((per)=>{
-        return per.id == id
+        return per.id === id
     }) 
     console.log(selectedStudent)
     useEffect(()=>{
@@ -33,7 +33,7 @@ export default function EditStudent() {
     }
 
     const studentIndex = student.findIndex((per)=>{
-        return per.id == id
+        return per.id === id
     })
     console.log(studentIndex)
 

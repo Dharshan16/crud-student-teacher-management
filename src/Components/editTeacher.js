@@ -5,7 +5,7 @@ import { AppState } from "../Context/AppProvider";
 
 
 export default function EditTeacher() {
-    const { teacher, setTeacher } = AppState();
+    const { teacher } = AppState();
     const history = useHistory();
     const{id}=useParams()
   
@@ -16,7 +16,7 @@ export default function EditTeacher() {
     const [experience, setExperience] = useState("");
 
     const selectedTeacher = teacher.find((per)=>{
-        return per.id == id
+        return per.id === id
     }) 
     useEffect(()=>{
         setIdx(selectedTeacher.id)
@@ -34,7 +34,7 @@ export default function EditTeacher() {
     }
 
     const teacherIndex = teacher.findIndex((per)=>{
-        return per.id == id
+        return per.id === id
     })
 
     const addTeacher = (e)=>{
